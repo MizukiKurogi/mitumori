@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f1f5f9;
+  margin: 0;
+  padding: 2rem;
+  min-height: 100vh;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  background: #ffffff;
+  max-width: 600px;
+  margin: auto;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.description {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  border-left: 5px solid #4f46e5;
+  padding-left: 0.5rem;
+  margin-top: 2rem;
+  color: #1e293b;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  display: block;
+  padding: 12px;
+  margin: 4px 0;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+label:hover {
+  background: #e0f2fe;
+  border-color: #93c5fd;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  accent-color: #4f46e5;
+}
+
+.total-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #fef2f2;
+  border-left: 5px solid #ef4444;
+  border-radius: 8px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  margin: 0;
+}
+
+#total {
+  color: #ef4444;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 32px;
+    height: 32px;
+  }
+
+  label {
+    padding: 10px;
+  }
+}
+
+/* ダークモード対応 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+  }
+
+  .container {
+    background: #1e293b;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  h1, h2, h3 {
+    color: #f8fafc;
+  }
+
+  .description {
+    color: #94a3b8;
+  }
+
+  label {
+    background: #334155;
+    border-color: #475569;
+    color: #e2e8f0;
+  }
+
+  label:hover {
+    background: #1e40af;
+    border-color: #3b82f6;
+  }
+
+  .total-section {
+    background: #7f1d1d;
+    border-left-color: #ef4444;
+  }
+
+  h3 {
+    color: #f8fafc;
+  }
+
+  #total {
+    color: #fca5a5;
+  }
+} 
