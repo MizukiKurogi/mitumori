@@ -117,6 +117,12 @@ h3 {
   margin-left: 0.5rem;
 }
 
+.option-disabled {
+  color: #b0b0b0;
+  font-size: 0.9em;
+  margin-left: 0.3em;
+}
+
 /* レスポンシブ対応 */
 @media screen and (max-width: 480px) {
   body {
